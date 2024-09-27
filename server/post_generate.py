@@ -46,11 +46,14 @@ def recreate_dataset_only(args, inferencer, dataset_list, save_path, client_idx,
                     instruction = ''
                 prompt_list.append(prompter.map_fin(instruction[:512]))
             else:
-                instruction = instruction[93:]
+                if args.dataset == 'chatdoctor':
+                    instruction = instruction[93:]
                 if len(instruction) < 1:
                     print(':', instruction)
 
                 prompt_list.append(prompter.map_med(instruction))
+
+        print(prompt_list[:5])
         # 生成
         outputs = generation(prompt_list, inferencer, use_vllm)
 

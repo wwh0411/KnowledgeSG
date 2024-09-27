@@ -71,7 +71,7 @@ class Prompter:
         return "Instruction: What is the sentiment of this news? Please choose an answer from {negative/neutral/positive}\n" + instruction + "\nAnswer: "
 
     def map_med(self, instruction):
-        return "If you are a doctor, please answer the medical questions based on the patient's description. \n\nPatient: " + instruction + "Is my question medical?\nChatDoctor: "
+        return "If you are a doctor, please answer the medical questions based on the patient's description. \n\nPatient: " + instruction + "\nChatDoctor: "
 
     def create_multi_prompts(self, dataset_hf, max_samples):
         prompt_list = []

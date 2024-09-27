@@ -1,5 +1,6 @@
-This is the official repository for the EMNLP 2024 paper "KnowledgeSG: Privacy-Preserving Synthetic Text Generation With Knowledge Distillation From Server"
-
+# KnowledgeSG: Privacy-Preserving Synthetic Text Generation With Knowledge Distillation From Server
+This is the official repository for the EMNLP 2024 main conference paper "KnowledgeSG: Privacy-Preserving Synthetic Text Generation With Knowledge Distillation From Server".  
+More code and illustration about the training, evaluation and visualization we used following previous works are on the way!
 ## Basic Usage
 Process and sample a huggingface dataset
 ```

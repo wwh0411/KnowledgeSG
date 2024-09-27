@@ -95,7 +95,6 @@ class Inferencer:
     def inference(self, prompt_input):
         # inference without vllm
         tokens = self.tokenizer.encode(prompt_input, return_tensors="pt").cuda()
-        print(len(prompt_input), len(tokens[0]))
 
         outputs = self.model.generate(inputs=tokens, max_length=1024,
                                       do_sample=True,
