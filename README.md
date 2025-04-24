@@ -18,3 +18,22 @@ Post generation through professional model.
 ```
 python server/post_generate.py --dataset <Dataset Name> --alg=post --base_model <Professional Model Path> --data_path=<Data Path From Last Step> --use_vllm 
 ```
+
+## Citation
+```
+@inproceedings{wang-etal-2024-knowledgesg,
+    title = "{K}nowledge{SG}: Privacy-Preserving Synthetic Text Generation with Knowledge Distillation from Server",
+    author = "Wang, WenHao  and
+      Liang, Xiaoyu  and
+      Ye, Rui  and
+      Chai, Jingyi  and
+      Chen, Siheng  and
+      Wang, Yanfeng",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+}
+```
